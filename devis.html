@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Chaleur et Flamme</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- POLICES -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <!-- STYLE -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="header">
+  <nav class="nav">
+    <div class="logo">Chaleur et Flamme</div>
+    <ul class="menu">
+      <li><a href="index.html">Accueil</a></li>
+      <li class="dropdown">
+        <a href="#" class="no-link">Nos produits</a>
+        <ul class="submenu">
+          <li><a href="cheminees.html">Cheminées</a></li>
+          <li><a href="inserts.html">Inserts</a></li>
+          <li><a href="poeles.html">Poêles à bois</a></li>
+          <li><a href="climatiseurs.html">Poêle à granulés</a></li>
+        </ul>
+      </li>
+      <li><a href="realisations.html">Nos réalisations</a></li>
+      <li><a href="entretien.html">Entretien</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="devis">
+  <h2>Demandez votre devis</h2>
+
+  <form action="mailto:chaleuretflemme@gmail.com" method="POST" enctype="text/plain">
+
+    <!-- Nom -->
+    <input type="text" name="Nom" placeholder="Nom (*)" class="full" required>
+
+    <!-- Adresse / Ville -->
+    <input type="text" name="Adresse" placeholder="Adresse postale">
+    <input type="text" name="Ville" placeholder="Ville">
+
+    <!-- Téléphone / Email -->
+    <input type="tel" name="Téléphone" placeholder="Téléphone (*)" required>
+    <input type="email" name="Email" placeholder="E-mail (*)" required>
+
+    <!-- Type de travaux -->
+    <h3>Type de travaux (*)</h3>
+    <div class="options">
+      <label><input type="checkbox" name="Travaux" value="Poêle"> Poêle</label>
+      <label><input type="checkbox" name="Travaux" value="Cheminée"> Cheminée</label>
+      <label><input type="checkbox" name="Travaux" value="Insert"> Insert</label>
+      <label><input type="checkbox" name="Travaux" value="Climatiseur"> Climatiseur</label>
+      <label><input type="checkbox" name="Travaux" value="Autre"> Autre</label>
+    </div>
+
+    <!-- Prestation -->
+    <h3>Prestation (*)</h3>
+    <div class="options">
+      <label><input type="radio" name="Prestation" value="Fourniture et pose" required> Fourniture et pose</label>
+      <label><input type="radio" name="Prestation" value="À emporter"> À emporter</label>
+    </div>
+
+    <!-- Âge habitation -->
+    <h3>Âge de l’habitation (*)</h3>
+    <div class="options">
+      <label><input type="radio" name="Age habitation" value="Plus de 2 ans" required> Plus de 2 ans</label>
+      <label><input type="radio" name="Age habitation" value="Moins de 2 ans"> Moins de 2 ans</label>
+    </div>
+
+    <!-- Isolation -->
+    <h3>Type d’isolation (*)</h3>
+    <div class="options">
+      <label><input type="checkbox" name="Isolation" value="BBC"> BBC</label>
+      <label><input type="checkbox" name="Isolation" value="RT 2012"> RT 2012</label>
+      <label><input type="checkbox" name="Isolation" value="Classique"> Classique</label>
+      <label><input type="checkbox" name="Isolation" value="Sans"> Sans</label>
+    </div>
+
+    <!-- Message -->
+    <textarea name="Message" placeholder="Décrivez votre projet" class="full"></textarea>
+
+    <!-- Bouton -->
+    <button type="submit">Envoyer</button>
+
+  </form>
+</section>
+
+<footer class="footer">
+  © 2026 Chaleur et Flamme
+</footer>
+
+</body>
+</html>

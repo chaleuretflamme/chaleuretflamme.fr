@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Demande d’entretien / ramonage – Chaleur et Flamme</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Polices -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Style -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <nav class="nav">
+    <div class="logo">Chaleur et Flamme</div>
+    <ul class="menu">
+      <li><a href="index.html">Accueil</a></li>
+      <li class="dropdown">
+        <a href="#" class="no-link">Nos produits</a>
+        <ul class="submenu">
+          <li><a href="cheminees.html">Cheminées</a></li>
+          <li><a href="inserts.html">Inserts</a></li>
+          <li><a href="poeles.html">Poêles à bois</a></li>
+          <li><a href="climatiseurs.html">Poêle à granulés</a></li>
+        </ul>
+      </li>
+      <li><a href="realisations.html">Nos réalisations</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="devis.html">Devis</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="section devis">
+  <h2>Demande d’entretien / ramonage</h2>
+
+  <form action="mailto:contact@chaleuretflemme.fr" method="POST" enctype="text/plain">
+
+    <!-- Identité -->
+    <input type="text" name="Nom" placeholder="Nom *" required>
+    <input type="text" name="Prénom" placeholder="Prénom *" required>
+
+    <input type="text" name="Adresse" placeholder="Adresse complète *" required>
+    <input type="text" name="Code postal" placeholder="Code postal *" required>
+
+    <input type="tel" name="Téléphone" placeholder="Téléphone *" required>
+
+    <!-- Type de foyer -->
+    <h3>Type de foyer *</h3>
+    <div class="options">
+      <label><input type="checkbox" name="Foyer" value="Poêle à bois"> Poêle à bois</label>
+      <label><input type="checkbox" name="Foyer" value="Cheminée"> Cheminée</label>
+      <label><input type="checkbox" name="Foyer" value="Insert"> Insert</label>
+      <label><input type="checkbox" name="Foyer" value="Poêle à granulés"> Poêle à granulés</label>
+    </div>
+
+    <!-- Commentaire -->
+    <h3>Commentaire</h3>
+    <textarea name="Commentaire" placeholder="Informations complémentaires, disponibilité, accès, etc."></textarea>
+
+    <!-- Bouton -->
+    <button type="submit">Envoyer la demande</button>
+
+  </form>
+</section>
+
+<footer class="footer">
+  © 2026 Chaleur et Flamme – Tous droits réservés
+</footer>
+
+</body>
+</html>
